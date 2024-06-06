@@ -65,10 +65,10 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('.guess').value = '';
 
   document.querySelector('.score').textContent = score;
-  if (document.querySelector('.guess').value === secretNumber) {
-    document.querySelector('.check').disabled = false;
-  }
+
+  document.querySelector('.check').disabled = false;
 });
+
 document.querySelector('.check').addEventListener('click', function () {
   let guess = document.querySelector('.guess').value;
   if (guess != secretNumber) {
